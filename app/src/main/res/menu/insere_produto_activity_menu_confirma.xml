@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/insere_produto_activity_menu_confirma_botao"
+        android:title="Insere produto"
+        android:icon="@drawable/ic_action_confirma"
+        app:showAsAction="always"/>
+</menu>

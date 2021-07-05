@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.InsereProdutoActivity">
+
+    <ImageView
+        android:id="@+id/insere_produto_activity_imagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maca_produto" />
+
+    <TextView
+        android:id="@+id/insere_produto_activity_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insere_produto_activity_imagem"
+        tools:text="Maçã" />
+
+    <TextView
+        android:id="@+id/insere_produto_activity_preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/insere_produto_activity_nome"
+        app:layout_constraintStart_toStartOf="@+id/insere_produto_activity_nome"
+        app:layout_constraintTop_toBottomOf="@+id/insere_produto_activity_nome"
+        tools:text="R$ 5,90" />
+
+    <TextView
+        android:id="@+id/insere_produto_activity_quantidade_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/insere_produto_activity_preco"
+        app:layout_constraintStart_toStartOf="@+id/insere_produto_activity_preco"
+        app:layout_constraintTop_toBottomOf="@+id/insere_produto_activity_preco"
+        tools:text="Insira a quatidade:" />
+
+    <EditText
+        android:id="@+id/insere_produto_activity_quantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Insira a quantidade"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/insere_produto_activity_quantidade_txt"
+        app:layout_constraintStart_toStartOf="@+id/insere_produto_activity_quantidade_txt"
+        app:layout_constraintTop_toBottomOf="@+id/insere_produto_activity_quantidade_txt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
